@@ -1,5 +1,6 @@
 const HtmlMinifierPlugin = require('minify-html-webpack-plugin');
 const path = require('path');
+
 module.exports = {
     watch: true,
     mode: 'production',
@@ -10,7 +11,7 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.scss$/,
+            test: /\.s[ac]ss$/,
             use: [{
                 loader: 'style-loader',
                 options: {
@@ -22,15 +23,21 @@ module.exports = {
                 options: {
                     implementation: require('sass'),
                     sassOptions: {
-                        fiber: require('fiber'),
+                        fiber: require('fibers'),
+                        includePaths: [path.resolve(__dirname, 'node_modules')],
                     },
                 },
             }],
         }],
     },
+    resolve: {
+        modules: ['node_modules'],
+        extensions: ['.scss', '.js'],
+    },
     plugins: [new HtmlMinifierPlugin({
         src: path.resolve(__dirname, 'src/'),
         dest: path.resolve(__dirname, 'build/'),
+        ignoreFileNameRegex: /(\.s[ac]ss$|\.js$)/,
         rules: {
             collapseBooleanAttributes: true,
             collapseWhitespace: true,
