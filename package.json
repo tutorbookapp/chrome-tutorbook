@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pack": "webpack"
+    "pack": "webpack --mode production",
+    "dev": "webpack --mode none"
   },
   "repository": {
     "type": "git",
@@ -42,7 +43,9 @@
     "@material/list": "^5.1.0",
     "@material/menu": "^5.1.0",
     "@material/menu-surface": "^5.1.0",
+    "@material/ripple": "^5.1.0",
     "@material/select": "^5.1.0",
-    "@material/textfield": "^5.1.0"
+    "@material/textfield": "^5.1.0",
+    "jquery": "^3.4.1"
   }
 }

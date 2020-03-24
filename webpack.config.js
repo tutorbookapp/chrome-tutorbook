@@ -3,7 +3,6 @@ const path = require('path');
 
 module.exports = {
     watch: true,
-    mode: 'production',
     entry: path.resolve(__dirname, 'src/popup.js'),
     output: {
         path: path.resolve(__dirname, 'build/'),
