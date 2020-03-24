@@ -1,0 +1,27 @@
+{
+  "name": "Tutorbook",
+  "version": "0.5.6",
+  "description": "Peer tutoring web app.",
+  "options_page": "options.html",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/favicon-16x16.png",
+      "32": "images/favicon-32x32.png",
+      "48": "images/favicon-48x48.png",
+      "128": "images/favicon-128x128.png"
+    }
+  },
+  "icons": {
+    "16": "images/favicon-16x16.png",
+    "32": "images/favicon-32x32.png",
+    "48": "images/favicon-48x48.png",
+    "128": "images/favicon-128x128.png"
+  },
+  "manifest_version": 2
+}
