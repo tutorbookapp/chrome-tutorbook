@@ -24,7 +24,7 @@ $ npm i
 ```
 
 Finally, to [webpack](https://webpack.js.org) our `src/` files into an
-installable Chrome extension, run:
+installable Chrome extension (contained in `build/`), run:
 
 ```bash
 $ npm run pack
