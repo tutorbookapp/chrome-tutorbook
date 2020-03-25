@@ -9,7 +9,8 @@
 @use "@material/button";
 
 .page {
-  min-width: 200px;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px);
   margin: 50px;
 }
 
@@ -32,7 +33,20 @@
   margin-bottom: 10px;
 }
 
+.page video {
+  width: 100%;
+  height: 100%;
+}
+
 #timer {
   width: 100%;
   margin: 15px 0;
+}
+
+#appt .mdc-select__anchor {
+  width: 100%;
+}
+
+#stop-recording {
+  @include button.filled-accessible(#B00020);
 }

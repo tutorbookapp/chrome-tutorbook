@@ -1,8 +1,8 @@
 {
   "name": "Tutorbook",
   "version": "0.5.6",
-  "description": "Peer tutoring web app.",
-  "permissions": ["activeTab", "storage"],
+  "description": "Record and track service hours from virtual peer tutoring.",
+  "permissions": ["desktopCapture", "storage"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
