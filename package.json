@@ -46,6 +46,6 @@
     "@material/ripple": "^5.1.0",
     "@material/select": "^5.1.0",
     "@material/textfield": "^5.1.0",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
